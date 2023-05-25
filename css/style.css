@@ -1,0 +1,1404 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    /* display: block; */
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+body {
+    background-color: #0B001A;
+}
+
+@font-face {
+    font-family: 'Georgia Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Georgia Regular'), url('georgia.woff') format('woff');
+    }
+    
+
+@font-face {
+    font-family: 'Georgia Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Georgia Italic'), url('georgiai.woff') format('woff');
+    }
+    
+
+@font-face {
+    font-family: 'Georgia Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Georgia Bold'), url('georgiab.woff') format('woff');
+    }
+    
+
+@font-face {
+    font-family: 'Georgia Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Georgia Bold Italic'), url('georgiaz.woff') format('woff');
+    }
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+    
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+/* 1024 Screen Width */
+
+/* Header Dimension */
+.header{
+    padding: 20px 0px 20px;
+    background-color: #1E0044;
+    border-radius: 15px;
+    margin: 20px 20px 0px;
+    padding: 40px 40px;
+}
+
+/* Header Logo-TopBar */
+
+.header .title{
+    align-items: center;
+    justify-content: center;
+}
+
+/* Header Links-TopBar */
+
+.header .slinks{
+    text-align: center;
+    margin: 0px;
+    padding: 0px 40px;
+}
+
+.header .slinks .linksholder{
+    text-align: center;
+}
+
+.header .slinks a{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: #E9DEFF;
+    text-decoration: none;
+}
+
+.header .slinks a:hover{
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+/* Header TopBar Button */
+
+.header .indicate{
+    text-align: right;
+}
+
+.header .indicate .btn-01{
+    width: 120px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #E9DEFF;
+    border: 1px solid #8338EC;
+}
+
+.header .indicate .btn-01:hover {
+    box-shadow: 0px 0px 3px 2px #8338EC;
+    background-color: #1E0044;
+}
+
+/* Header Hero Dimension  */
+
+.header .hero{
+    padding: 140px 0px;
+}
+
+/* Header Hero Title */
+
+.header .hero h1{
+    color: #E9DEFF;
+    Font-family: Montserrat;
+    Font-size: 80px;
+    Line-height: 90px;
+    Vertical-align: Top;
+    Letter-spacing: -4%
+}
+
+/* Header hero title "beautiful" decoration gradient */
+
+.header .hero .deco{
+    position: relative;
+    color: #E9DEFF;
+    font-family: 'Georgia Italic';
+    background: linear-gradient(to right, #8338ec 100%, #b923ff 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+/* Header hero title "beautiful" decoration underline */
+
+.header .deco {
+    position: relative;
+    display: inline-block !important;
+}
+
+.header .deco::before {
+    content: "beautiful";
+    position: absolute;
+    height: 8px;
+    width: 130%;
+    background-image: url(/images/Line\ 1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: 0px;
+    left: -50px;
+}
+
+/* Header hero subtitle */
+
+.header .hero h4{
+    color: #E9DEFF;
+    Font-family: Montserrat;
+    font-weight: 400;
+    Font-size: 18px;
+    Line-height: 24px;
+    padding: 12px 0px;
+}
+
+/* Header bottom right text */
+
+.header .third .freelance{
+    position: relative;
+}
+
+.header .third .freelance p{
+    Font-family: Montserrat;
+    color: #E9DEFF;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* Features section dimnesion */
+
+.features{
+    padding: 40px 20px;
+}
+
+.features .featbox{
+    display: flex;
+}
+
+/* Features/ Left Div dimension & gradient */
+
+.features .development{
+    background: rgb(131,59,236);
+    background: linear-gradient(90deg, rgba(131,59,236,1) 100%, rgba(156,46,245,1) 100%);
+    border-radius: 15px;
+    padding: 50px 50px;
+    flex: 1;
+}
+
+/* Features/ Right Div dimension & gradient */
+
+.features .direction{
+    background: rgb(158,45,246);
+    background: linear-gradient(90deg, rgba(158,45,246,1) 100%, rgba(185,35,255,1) 100%);
+    border-radius: 15px;
+    padding: 50px 50px;
+    flex: 1;
+
+}
+
+/* Features/ div top portion text and button properties */
+
+.features .featbox h1{
+    Font-family: Montserrat;
+    color: #E9DEFF;
+    font-weight: 300;
+    margin-top: 10px;
+    font-size: 34px;
+}
+
+.features .text p{
+    Font-family: Montserrat;
+    color: #E9DEFF;
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 65px;
+}
+
+.features .btn-02{
+    padding: 5px 10px 5px 10px;
+    border-radius: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #E9DEFF;
+    border: 1px solid #E9DEFF;
+    margin-right: 5px;
+}
+
+.features .btn-02:hover{
+    box-shadow: 0px 0px 3px 2px #E9DEFF;
+    color: #E9DEFF;
+}
+
+/* First casestudy section dimension */
+
+.casestudy-01{
+    background-color: #E9DEFF;
+    border-radius: 15px;
+    margin: 20px 20px 0px;
+    padding: 30px 40px;
+}
+
+/* Casestudy-01 section top text & button prop. */
+
+.casestudy-01 h1{
+    Font-family: Montserrat;
+    color: #1e1e1e;
+    font-weight: 500;
+    font-size: 34px;
+}
+
+.casestudy-01 .button-top{
+    margin-top: 10px;
+}
+
+.casestudy-01 p{
+    Font-family: Montserrat;
+    color: #1e1e1e;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0px 220px 0px 0px;
+}
+
+.casestudy-01 .button-top .btn-03{
+    padding: 5px 15px 5px 15px;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #0B001A;
+    border: 1px solid #1e1e1e;
+    margin-right: 5px;
+}
+
+.casestudy-01 .button-top .btn-03:hover{
+    box-shadow: 0px 0px 2px 1px #1e1e1e;
+    color: #1e1e1e;
+}
+
+/* Casestudy-01 section bottom text & button prop. */
+
+.casestudy-01 .bottom p{
+    Font-family: Montserrat;
+    color: #1e1e1e;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0px 240px 0px 0px;
+}
+
+.casestudy-01 .button-low .btn-04{
+    padding: 7px 20px 7px 20px;
+    border-radius: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: #0B001A;
+    border: 1px solid #8338EC;
+}
+
+.casestudy-01 .button-low .btn-04:hover {
+    box-shadow: 0px 0px 2px 1px #8338EC;
+}
+
+.casestudy-01 .low{
+    flex-direction: column;
+}
+
+/* Second casestudy section dimension */
+
+.casestudy-02{
+    background-color: #1E0044;
+    border-radius: 15px;
+    margin: 20px 20px 0px;
+    padding: 30px 40px;
+}
+
+/* Casestudy-02 text and buttons */
+
+.casestudy-02 h1{
+    Font-family: Montserrat;
+    color: #E9DEFF;
+    font-weight: 500;
+    font-size: 34px;
+}
+
+.casestudy-02 .button-top{
+    margin-top: 10px;
+}
+
+.casestudy-02 p{
+    Font-family: Montserrat;
+    color: #E9DEFF;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0px 220px 0px 0px;
+}
+
+.casestudy-02 .button-top .btn-03{
+    padding: 5px 15px 5px 15px;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #E9DEFF;
+    border: 1px solid #E9DEFF;
+    margin-right: 5px;
+}
+
+.casestudy-02 .button-top .btn-03:hover{
+    box-shadow: 0px 0px 2px 1px #E9DEFF;
+    color: #E9DEFF;
+}
+
+/* Casestudy-02 bottom text and buttons */
+
+.casestudy-02 .bottom p{
+    Font-family: Montserrat;
+    color: #E9DEFF;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0px 240px 0px 0px;
+}
+
+.casestudy-02 .button-low .btn-04{
+    padding: 7px 20px 7px 20px;
+    border-radius: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: #E9DEFF;
+    border: 1px solid #8338EC;
+}
+
+.casestudy-02 .button-low .btn-04:hover {
+    box-shadow: 0px 0px 2px 1px #8338EC;
+}
+
+.casestudy-02 .low{
+    flex-direction: column;
+}
+
+/* Casestudy-02 Badge */
+
+.casestudy-02 .badge{
+    position: absolute;
+    left: 590px;
+    margin-top: 15px;
+}
+.casestudy-02 .badge img{
+    max-width: 100px;
+    height: auto;
+}
+
+/* Awards section dimension */
+
+.awards{
+    padding: 40px 0px 40px;
+    background-color: #E9DEFF;
+    border-radius: 15px;
+    margin: 20px 20px 20px;
+    padding: 40px 40px;
+}
+
+/* Awards section right list */
+
+.awards .awardlist{
+    padding: 0px 0px 0px 60px;
+}
+
+.awards .awardlist h5{
+    font-weight: 600;
+    font-size: 19px;
+    text-transform: uppercase;
+    line-height: .5;
+}
+
+.awards .awardlist p{
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+/* First list item */ 
+
+.awards .awardbox1{
+    padding: 10px 0px;
+    border-top: 0.5px solid rgba(23, 0, 52, 0.4);
+    border-bottom: 0.5px solid rgba(23, 0, 52, 0.4);
+    color: #1e1e1e;
+}
+
+/* Last 3 items */
+
+.awards .awardbox2{
+    padding: 10px 0px;
+    border-bottom: 0.5px solid rgba(23, 0, 52, 0.4);
+    color: #1e1e1e;
+}
+
+/* Awardslist arrow properties */
+
+.awards .arrow{
+    padding: 0px;
+}
+.awards .arrow p{
+    font-size: 34px;
+    text-align: right;
+}
+
+/* Footer section dimension */
+
+.footer{
+    padding: 20px 0px 20px;
+    background-color: #1E0044;
+    border-radius: 15px;
+    margin: 20px 20px 20px;
+    padding: 40px 40px;
+}
+
+/* Footer topbar logo */
+
+.footer .title{
+    align-items: center;
+    justify-content: center;
+}
+
+/* Footer topbar links */
+
+.footer .slinks{
+    text-align: right;
+    margin: 0px;
+    padding: 0px 0px;
+}
+
+.footer .slinks a{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: #E9DEFF;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.footer .slinks a:hover{
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Footer hero section dimension */
+
+.footer .hero{
+    padding: 80px 0px 40px;
+}
+
+/* Footer hero section title */
+
+.footer .hero h1{
+    color: #E9DEFF;
+    Font-family: Montserrat;
+    Font-size: 80px;
+    Line-height: 90px;
+    Vertical-align: Top;
+    Letter-spacing: -4%
+}
+
+/* Footer hero section title "together" gradient*/
+
+.footer .hero .deco{
+    position: relative;
+    color: #E9DEFF;
+    font-family: 'Georgia Italic';
+    background: linear-gradient(to right, #8338ec 100%, #b923ff 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+/* Footer hero section title "together" decorative line*/
+
+.footer .deco {
+    position: relative;
+    display: inline-block !important;
+}
+
+.footer .deco::before {
+    content: "together?";
+    position: absolute;
+    height: 8px;
+    width: 120%;
+    background-image: url(/images/Line\ 1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: -2px;
+    left: -40px;
+}
+
+/* Footer hero section subtitle*/
+
+.footer .hero h4{
+    color: #E9DEFF;
+    Font-family: Montserrat;
+    font-weight: 400;
+    Font-size: 18px;
+    Line-height: 24px;
+    padding: 12px 0px;
+}
+
+/* Footer bottom */
+
+.footer .third .freelance{
+    position: relative;
+}
+
+.footer .third p{
+    Font-family: Montserrat;
+    color: #E9DEFF;
+}
+
+.footer .third .freelance p{
+    Font-family: Montserrat;
+    color: #E9DEFF;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+/* Media Queries */
+
+/* 
+##Device = Desktops
+##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) and (max-width: 1398px){
+
+    /* CSS */
+    
+    .casestudy-01 h1{
+        font-size: 44px;
+    }
+
+    .casestudy-02 h1{
+        font-size: 44px;
+    }
+    
+    .casestudy-01 p{
+        font-size: 18px;
+    }
+
+    .casestudy-02 p{
+        font-size: 18px;
+    }
+    
+    .casestudy-01 .bottom p{
+        font-size: 16px;
+        padding: 0px 120px 0px 0px;
+    }
+
+    .casestudy-02 .bottom p{
+        font-size: 16px;
+        padding: 0px 120px 0px 0px;
+    }
+
+}
+
+/*
+##Device = Laptops, Desktops
+##Screen = B/w 1068px to 1280px 
+*/
+
+@media (min-width: 1068px) and (max-width: 1144px) {
+
+.awards .awardlist h5 {
+    line-height: 1.3;
+}
+
+.casestudy-01 .bottom p {
+    padding: 0px 0px 0px 0px;
+}
+.casestudy-02 .bottom p {
+    padding: 0px 0px 0px 0px;
+}
+}
+
+
+/* 
+##Device = Laptops, Desktops
+##Screen = B/w 1025px to 1067px
+*/
+
+@media (min-width: 1025px) and (max-width: 1067px) {
+
+/* CSS */
+.casestudy-01 h1{
+    font-size: 26px;
+}
+
+.casestudy-02 h1{
+    font-size: 26px;
+}
+
+.casestudy-01 p{
+    font-size: 14px;
+}
+
+.casestudy-02 p{
+    font-size: 14px;
+}
+
+.casestudy-01 .bottom p{
+    font-size: 12px;
+    padding: 0px 80px 0px 0px;
+    margin-top: -40px;
+    margin-bottom: 20px;
+}
+
+.casestudy-02 .bottom p{
+    font-size: 12px;
+    padding: 0px 80px 0px 0px;
+    margin-top: -40px;
+    margin-bottom: 20px;
+}
+
+.casestudy-02 .badge {
+    position: absolute;
+    left: 460px;
+    margin-top: 15px;
+}
+
+.awards .awardlist h5 {
+    line-height: 1.2;
+}
+}
+
+/*  */
+@media (min-width: 992px) and (max-width: 1024px) and (orientation: portrait) {
+/* CSS     */
+.awards .awardlist h5 {
+    line-height: 1.3;
+}
+
+.casestudy-01 .bottom p {
+    padding: 0px 0px 0px 0px;
+}
+.casestudy-02 .bottom p {
+    padding: 0px 0px 0px 0px;
+}
+}
+
+/*  */
+
+@media (min-width: 992px) and (max-width: 1024px) and (orientation: landscape) {
+
+/* CSS */
+.casestudy-01 h1{
+    font-size: 26px;
+}
+
+.casestudy-02 h1{
+    font-size: 26px;
+}
+
+.casestudy-01 p{
+    font-size: 14px;
+}
+
+.casestudy-02 p{
+    font-size: 14px;
+}
+
+.casestudy-01 .bottom p{
+    font-size: 12px;
+    padding: 0px 80px 0px 0px;
+    margin-top: -60px;
+    margin-bottom: 20px;
+}
+
+.casestudy-02 .bottom p{
+    font-size: 12px;
+    padding: 0px 80px 0px 0px;
+    margin-top: -60px;
+    margin-bottom: 20px;
+}
+
+.casestudy-02 .badge {
+    position: absolute;
+    left: 445px;
+    margin-top: 15px;
+}
+
+.awards .awardlist h5 {
+    line-height: 1.2;
+}
+
+.features .text p {
+    margin-top: 65px;
+}
+
+}
+
+/* 
+##Device = Tablets, Ipads (portrait)
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+/* CSS */
+.header .title{
+    text-align: center;
+}
+
+.header .slinks{
+    text-align: center;
+    padding: 0px 5px;
+    margin-bottom: 20px;
+}
+
+.header .slinks a{
+    font-size: 10px;
+}
+
+.header .indicate{
+    text-align: center;
+}
+
+.header .hero h1{
+    color: #E9DEFF;
+    Font-family: Montserrat;
+    Font-size: 30px;
+    Line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.header .hero h4{
+    Font-size: 12px;
+    Line-height: 18px;
+    padding: 0px;
+    word-spacing: 5px;
+}
+
+.header .deco::before {
+    left: -20px;
+}
+
+.header .third{
+    text-align: center;
+}
+
+.header .third img{
+    padding: 40px 0px;
+}
+
+.header .third .freelance{
+    text-align: center;
+}
+.header .third .freelance p{
+    position: relative;
+}
+.features .development{
+    padding: 50px 31px;
+    margin-bottom: 20px;
+}
+.features .direction{
+    padding: 50px 31px;
+}
+
+.casestudy-01{
+    margin: 20px 20px 0px;
+    padding: 30px 16px;
+}
+
+.casestudy-01 .bottom p{
+    padding: 0px 0px;
+    text-align: center;
+}
+
+.casestudy-01 .button-low{
+    text-align: center;
+}
+
+.casestudy-01 img{
+    margin-top: 20px;
+}
+
+.casestudy-02{
+    margin: 20px 20px 0px;
+    padding: 30px 16px;
+}
+
+.casestudy-02 .bottom p{
+    padding: 0px 0px;
+    text-align: center;
+}
+
+.casestudy-02 .button-low{
+    text-align: center;
+}
+
+.casestudy-02 img{
+    margin-top: 20px;
+}
+
+.casestudy-02 .badge{
+    display: none;
+}
+
+.awards h1{
+    text-align: center;
+}
+
+.awards .awardlist{
+    padding: 0px 0px;
+}
+
+.awards .awardlist h5{
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.footer .title{text-align: center;
+}
+
+.footer .slinks{
+    text-align: center;
+    padding: 0px 0px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.footer .slinks a{
+    font-size: 11.6px;
+}
+
+.footer .indicate{
+    text-align: center;
+}
+
+.footer .hero h1{
+    color: #E9DEFF;
+    Font-family: Montserrat;
+    Font-size: 32px;
+    Line-height: 40px;
+}
+
+.footer .hero h4{
+    Font-size: 13px;
+    Line-height: 18px;
+}
+
+.footer .deco::before {
+    left: -17px;
+}
+
+.footer .third{
+    text-align: center;
+}
+
+.footer .third p{
+    text-align: center;
+}
+
+.footer .third .freelance p{
+    position: relative;
+}
+}
+
+/* 
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+/* CSS */
+
+}
+
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+/* CSS */
+.header .title{
+    text-align: center;
+}
+
+.header .slinks{
+    text-align: center;
+    padding: 0px 5px;
+    margin-bottom: 20px;
+}
+
+.header .slinks a{
+    font-size: 10px;
+}
+
+.header .indicate{
+    text-align: center;
+}
+
+.header .hero h1{
+    color: #E9DEFF;
+    Font-family: Montserrat;
+    Font-size: 30px;
+    Line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.header .hero h4{
+    Font-size: 12px;
+    Line-height: 18px;
+    padding: 0px;
+    word-spacing: 5px;
+}
+
+.header .deco::before {
+    left: -20px;
+}
+
+.header .third{
+    text-align: center;
+}
+
+.header .third img{
+    padding: 40px 0px;
+}
+
+.header .third .freelance{
+    text-align: center;
+}
+.header .third .freelance p{
+    position: relative;
+}
+.features .development{
+    padding: 50px 31px;
+    margin-bottom: 20px;
+}
+.features .direction{
+    padding: 50px 31px;
+}
+
+.casestudy-01{
+    margin: 20px 20px 0px;
+    padding: 30px 16px;
+}
+
+.casestudy-01 .bottom p{
+    padding: 0px 0px;
+    text-align: center;
+}
+
+.casestudy-01 .button-low{
+    text-align: center;
+}
+
+.casestudy-01 img{
+    margin-top: 20px;
+}
+
+.casestudy-02{
+    margin: 20px 20px 0px;
+    padding: 30px 16px;
+}
+
+.casestudy-02 .bottom p{
+    padding: 0px 0px;
+    text-align: center;
+}
+
+.casestudy-02 .button-low{
+    text-align: center;
+}
+
+.casestudy-02 img{
+    margin-top: 20px;
+}
+
+.casestudy-02 .badge{
+    display: none;
+}
+
+.awards h1{
+    text-align: center;
+}
+
+.awards .awardlist{
+    padding: 0px 0px;
+}
+
+.awards .awardlist h5{
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.footer .title{text-align: center;
+}
+
+.footer .slinks{
+    text-align: center;
+    padding: 0px 0px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.footer .slinks a{
+    font-size: 11.6px;
+}
+
+.footer .indicate{
+    text-align: center;
+}
+
+.footer .hero h1{
+    color: #E9DEFF;
+    Font-family: Montserrat;
+    Font-size: 32px;
+    Line-height: 40px;
+}
+
+.footer .hero h4{
+    Font-size: 13px;
+    Line-height: 18px;
+}
+
+.footer .deco::before {
+    left: -17px;
+}
+
+.footer .third{
+    text-align: center;
+}
+
+.footer .third p{
+    text-align: center;
+}
+
+.footer .third .freelance p{
+    position: relative;
+}
+}
+
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+/* CSS */
+.header .title{
+    text-align: center;
+}
+
+.header .slinks{
+    text-align: center;
+    padding: 0px 0px;
+    margin-bottom: 20px;
+}
+
+.header .slinks .menu{
+    padding: 0px 0px;
+}
+
+.header .slinks a{
+    font-size: 10px;
+}
+
+.header .indicate{
+    text-align: center;
+}
+
+.header .hero h1{
+    color: #E9DEFF;
+    Font-family: Montserrat;
+    Font-size: 30px;
+    Line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.header .hero h4{
+    Font-size: 12px;
+    Line-height: 18px;
+    padding: 0px;
+    word-spacing: 5px;
+}
+
+.header .deco::before {
+    left: -20px;
+}
+
+.header .third{
+    text-align: center;
+}
+
+.header .third img{
+    padding: 40px 0px;
+}
+
+.header .third .freelance{
+    text-align: center;
+}
+
+.header .third .freelance p{
+    position: relative;
+}
+
+.features{
+    padding: 10px;
+    text-align: center;
+}
+
+.features .development{
+    margin-bottom: 10px;
+    padding: 40px 25px;
+}
+
+.features .development h1{
+    font-size: 22px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.features .direction h1{
+    font-size: 22px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.features .development p{
+    margin-top: 0px;
+    text-align: justify;
+}
+
+.features .direction{
+    padding: 40px 25px;
+}
+
+.features .direction p{
+    margin-top: 0px;
+    text-align: justify;
+}
+
+.features .btn-02{
+    scale: .8;
+}
+
+.casestudy-01{
+    margin: 10px 20px 0px;
+    padding: 30px 16px;
+}
+
+.casestudy-01 .bottom p{
+    padding: 0px 0px;
+    text-align: center;
+}
+
+.casestudy-01 .button-low{
+    text-align: center;
+}
+
+.casestudy-01 img{
+    margin-top: 20px;
+}
+
+.casestudy-02{
+    margin: 20px 20px 0px;
+    padding: 30px 16px;
+}
+
+.casestudy-02 .bottom p{
+    padding: 0px 0px;
+    text-align: center;
+}
+
+.casestudy-02 .button-low{
+    text-align: center;
+}
+
+.casestudy-02 img{
+    margin-top: 20px;
+}
+
+.casestudy-02 .badge{
+    display: none;
+}
+
+.casestudy-01 .btn-03{
+    scale: .9;
+    margin-bottom: 5px;        
+}
+.casestudy-02 .btn-03{
+    scale: .9;
+    margin-bottom: 5px;        
+}
+
+.awards h1{
+    text-align: center;
+}
+
+.awards .awardlist{
+    padding: 0px 0px;
+}
+
+.awards .awardlist h5{
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.footer .title{text-align: center;
+}
+
+.footer .slinks{
+    text-align: center;
+    padding: 0px 0px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.footer .slinks a{
+    font-size: 11.6px;
+}
+
+.footer .indicate{
+    text-align: center;
+}
+
+.footer .hero h1{
+    color: #E9DEFF;
+    Font-family: Montserrat;
+    Font-size: 32px;
+    Line-height: 40px;
+}
+
+.footer .hero h4{
+    Font-size: 13px;
+    Line-height: 18px;
+}
+
+.footer .deco::before {
+    left: -17px;
+}
+
+.footer .third{
+    text-align: center;
+}
+
+.footer .third p{
+    text-align: center;
+}
+
+.footer .third .freelance p{
+    position: relative;
+}
+
+
+}
